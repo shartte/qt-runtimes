@@ -9,10 +9,10 @@ This repo will generate all the files needed to compile/deploy Qt on Windows/OSX
 The results are put into ````./output```.
 
 ```
-./output/qt-5.12.2-ebc29a8-linux-x64-dev.tar.gz
-./output/qt-5.12.2-ebc29a8-linux-x64-runtime.tar.gz
-./output/qt-5.12.2-ebc29a8-osx-x64-dev.tar.gz
-./output/qt-5.12.2-ebc29a8-osx-x64-runtime.tar.gz
-./output/qt-5.12.2-ebc29a8-win-x64-dev.tar.gz
-./output/qt-5.12.2-ebc29a8-win-x64-runtime.tar.gz
+./output/qt-5.15.0-ebc29a8-linux-x64-dev.tar.gz
+./output/qt-5.15.0-ebc29a8-linux-x64-runtime.tar.gz
+./output/qt-5.15.0-ebc29a8-osx-x64-dev.tar.gz
+./output/qt-5.15.0-ebc29a8-osx-x64-runtime.tar.gz
+./output/qt-5.15.0-ebc29a8-win-x64-dev.tar.gz
+./output/qt-5.15.0-ebc29a8-win-x64-runtime.tar.gz
 ```

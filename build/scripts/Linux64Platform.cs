@@ -12,15 +12,15 @@ namespace Build
 {
     public class Linux64Platform : IPlatform
     {
-        public string QtVersion => "5.12.2";
+        public string QtVersion => "5.15.0";
 
         public string PlatformArch => "linux-x64";
 
         public string[] GetUrls()
         {
-            var urls = Helpers.GetQtArchives("https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5122",
-                    "qt.qt5.5122.gcc_64",
-                    "qt.qt5.5122.qtvirtualkeyboard.gcc_64")
+            var urls = Helpers.GetQtArchives("https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5150",
+                    "qt.qt5.5150.gcc_64",
+                    "qt.qt5.5150.qtvirtualkeyboard.gcc_64")
                 .ToList();
             
             urls.AddRange(Helpers.GetQtArchives("https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/tools_qtcreator",
@@ -82,7 +82,7 @@ namespace Build
             DeleteDirectory(Path.Combine(extractedDirectory, "Tools"));
             DeleteDirectory(Path.Combine(extractedDirectory, "qt", "lib", "cmake"));
             DeleteDirectory(Path.Combine(extractedDirectory, "qt", "lib", "pkgconfig"));
-            foreach (var directory in GetDirecories(Path.Combine(extractedDirectory, "qt")))
+            foreach (var directory in GetDirectories(Path.Combine(extractedDirectory, "qt")))
             {
                 switch (Path.GetFileName(directory))
                 {
